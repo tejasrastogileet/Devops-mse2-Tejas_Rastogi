@@ -1,0 +1,28 @@
+
+# Go to home directory
+cd ~
+
+# Create file
+touch index.html
+
+# Add content
+echo "<h1>Hello LifeBridge</h1>" > index.html
+
+# Check permissions
+ls -l index.html
+
+# Give full permissions
+chmod 777 index.html
+
+# Verify
+ls -l index.html
+
+# Change owner (used current user)
+chown $USER:$USER index.html
+
+# Set final permissions
+chmod 755 index.html
+
+# Final check
+ls -l index.html
+

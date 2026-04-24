@@ -1,0 +1,20 @@
+# Navigate to project
+cd DevOps-Assignment/TestCase3_NodeApp
+
+# Build Docker image
+docker build -t nodejs-api .
+
+# Check images
+docker images
+
+# Run container
+docker run -p 8080:8080 nodejs-api
+
+# Verify endpoint
+# http://localhost:8080/health
+
+# Run with docker-compose
+docker compose up -d
+
+# Check running containers
+docker ps

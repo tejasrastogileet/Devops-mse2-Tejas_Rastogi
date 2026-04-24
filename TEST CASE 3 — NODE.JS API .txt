@@ -1,0 +1,15 @@
+# Navigate to folder
+cd DevOps-Assignment/TestCase3_NodeApp
+
+# Initialize project
+npm init -y
+
+# Install dependencies
+npm install express
+npm install --save-dev @types/express
+
+# Run server
+node index.js
+
+# Verify endpoint
+# http://localhost:8080/health
