@@ -1,15 +1,32 @@
+cd DevOps-Assignment/TestCase3_NodeApp
+
+npm init -y
+
+npm install express
+npm install --save-dev @types/express
+
+node index.js
+
+===============================
+TEST CASE 3 — NODE.JS API
+===============================
+
 # Navigate to folder
 cd DevOps-Assignment/TestCase3_NodeApp
 
-# Initialize project
+# Initialize Node project
 npm init -y
 
 # Install dependencies
 npm install express
-npm install --save-dev @types/express
+
+# Create index.js file (manual step in VS Code)
 
 # Run server
 node index.js
 
-# Verify endpoint
+# Expected output
+# Server running on port 8080
+
+# Verify API endpoint in browser
 # http://localhost:8080/health

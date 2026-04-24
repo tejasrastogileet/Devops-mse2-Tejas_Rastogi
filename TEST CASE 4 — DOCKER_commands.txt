@@ -1,19 +1,45 @@
-# Navigate to project
+===============================
+TEST CASE 3 — NODE APP + DOCKER
+===============================
+
+# Navigate to project folder
 cd DevOps-Assignment/TestCase3_NodeApp
+
+# Initialize Node project
+npm init -y
+
+# Install Express
+npm install express
+
+# Create index.js file (manual step in VS Code)
+
+# Run Node app locally
+node index.js
+
+# Expected output
+# Server running on port 8080
+
+# Verify API in browser
+# http://localhost:8080/health
+
+
+--------------------------------
+DOCKER STEPS
+--------------------------------
 
 # Build Docker image
 docker build -t nodejs-api .
 
-# Check images
+# Check created images
 docker images
 
 # Run container
 docker run -p 8080:8080 nodejs-api
 
-# Verify endpoint
+# Verify Docker container API
 # http://localhost:8080/health
 
-# Run with docker-compose
+# Run with docker-compose (if used)
 docker compose up -d
 
 # Check running containers

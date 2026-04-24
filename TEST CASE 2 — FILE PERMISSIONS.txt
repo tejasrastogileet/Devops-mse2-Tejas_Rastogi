@@ -1,28 +1,26 @@
-
-# Go to home directory
+# Step 1: Go to home directory
 cd ~
 
-# Create file
+# Step 2: Create a new file
 touch index.html
 
-# Add content
+# Step 3: Add content to the file
 echo "<h1>Hello LifeBridge</h1>" > index.html
 
-# Check permissions
+# Step 4: Check current file permissions
 ls -l index.html
 
-# Give full permissions
+# Step 5: Give full permissions (read, write, execute to all)
 chmod 777 index.html
 
-# Verify
+# Step 6: Verify updated permissions
 ls -l index.html
 
-# Change owner (used current user)
+# Step 7: Change file owner to current user
 chown $USER:$USER index.html
 
-# Set final permissions
+# Step 8: Set secure permissions (read/write for owner, read/execute for others)
 chmod 755 index.html
 
-# Final check
+# Step 9: Final verification of permissions
 ls -l index.html
-
